@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style4.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Registro</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Hazte socio!</div>
+            <div class="content">
+                <form action="enviar.php" method="post" id="mi_formulario"> 
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label class="details" for="nombre">Nombre: </label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="apellido">Apellido: </label>
+                            <input type="text" name="apellido">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="rut">Rut: </label>
+                            <input type="text" name="rut">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="nombre">Correo: </label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="fono">Número de eléfono: </label>
+                            <input type="text" name="fono">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="aporte">Monto a aportar: </label>
+                            <input type="text" name="aporte">
+                        </div>
+                        <div class="recordatorio">
+                            <input type="radio" name="opcion" id="dot-1" checked>
+                            <input type="radio" name="opcion" id="dot-2">
+                            <span class="recordatorio-titulo">Recordatorio del aporte:</span>
+                            <div class="category">
+                              <label for="dot-1">
+                              <span class="dot one"></span>
+                              <span class="opcion">Mensual</span>
+                            </label>
+                            <label for="dot-2">
+                              <span class="dot two"></span>
+                              <span class="opcion">Anual </span>
+                            </label>
+                            
+                            </div>
+                          </div>
+                        
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+                <div id="msg" class="mensaje"></div>
+
+                <script src="formulario4.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
