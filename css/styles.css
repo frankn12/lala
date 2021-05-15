@@ -1,0 +1,318 @@
+
+
+@font-face{
+    font-family: "Blue Highway";
+    src: url(../fonts/blue-highway.ttf);
+}
+
+
+@media screen and (min-width: 1201px) {
+    div.txtimg {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+    div.txtimg {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 900px) {
+    div.txtimg {
+      font-size: 10px;
+    }
+  }
+
+
+@media screen and (max-width: 700px) {
+  div.txtimg {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h2.h2-galery {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2.h2-galery {
+    font-size: 20px;
+  }
+}
+
+
+body{
+    background-image:linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(../img/bg1.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+#mainNav{
+    background-color:rgba(47,23,15,.9);
+    font-family: "Blue Highway";
+}
+#mainNav .navbar-brand{
+    color:#e6a756
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    color:rgba(255,255,255,.7);
+    font-weight:800
+}
+#mainNav .navbar-nav .nav-item.active .nav-link{
+    color:#e6a756}
+
+/*EN ESAS MEDIDAS LA BARRA DE NAVEGACIÓN TENDRÁ ESAS CARACTERÍSTICAS*/
+@media (min-width:992px){
+    #mainNav .navbar-nav .nav-item .nav-link{
+        font-size:.9rem
+    }
+    /*INTERACTUO PERO NO ACTIVO*/
+    #mainNav .navbar-nav .nav-item .nav-link:hover{
+        color:rgba(255,255,255,.4)
+    }
+    /*INTERACTUO Y HAGO CLICK*/    
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover{
+        color:#e6a756}
+}
+
+.text-faded{
+    color:rgba(255,255,255,.3)}
+
+.site-heading{
+    font-family: "Blue Highway";
+    margin-top:5rem;
+    margin-bottom:5rem;
+    text-transform:uppercase;
+    line-height:1;
+}
+
+.site-heading .site-heading-lower{
+    font-family: "Blue Highway";
+    font-size:5rem;
+    font-weight:100;
+    line-height:4rem
+}
+
+.footer {
+    background-color: rgba(47, 23, 15, 0.9);
+    font-family: "Blue Highway";
+}
+    
+.footer .redesSociales{
+    width:3vw;
+    height:3vh;
+}
+
+li{
+  list-style:none
+}
+
+.li-puntos{
+  list-style: circle;
+}
+
+
+.section-title1 {
+    font-family: "Blue Highway";
+    text-transform: uppercase;
+}
+
+.intro {
+    position: relative;
+}
+
+/*EN ESAS MEDIDAS LA IMAGEN Y EL TEXTO TENDRÁN ESAS CARACTERÍSTICAS*/
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 75%;
+        float: right;
+        border-radius: 1rem;
+    }
+    .intro .intro-text {
+        left: 0%;
+        width: 60%;
+        margin-top: 5rem;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro .intro-text {
+      width: 45%;
+    }
+}
+
+.bg-parrafo1 {
+    background-color: rgba(206, 205, 205, 0.85);
+    border-radius: 0.5rem;
+}
+
+.p-texto1{
+    font-family: "Blue Highway";
+    text-align: justify;
+}
+
+.card-text{
+    font-family: "Blue Highway";
+    text-align: justify;
+    margin-top: 1rem;
+    color:whitesmoke;
+}
+
+.title-carusel{
+    font-weight:bolder;
+    margin-bottom: 7rem;
+}
+
+#titulo {
+    font-family: "Blue Highway";
+    color:white;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-cards{
+    background: rgba(128, 128, 128, 0.548); 
+    padding: 3rem;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+}
+
+
+.h1-galery{
+    color: rgb(231, 228, 10);
+    text-align:center; 
+    letter-spacing: 15px;
+    font-family: "Blue Highway";
+    font-size: 6vw
+    
+    }
+
+    
+.p-galery {
+  color: rgb(240, 240, 247); 
+  letter-spacing: 3px;
+  font-family: "Blue Highway";
+  font-size: 2vw;       
+}
+    
+.textOverImage{
+  width:100%;
+  display:inline-block;
+  border-radius:4px;
+  margin:4px;
+  position:relative;
+  cursor:pointer;
+  overflow:hidden;
+}
+      
+.textOverImage > input{
+  display:none;
+}
+      
+.textOverImage > div,.textOverImage > h2{
+  position:absolute;
+  background-color:rgba(255,255,255,0.8);
+  bottom:20px;
+  left:4px;
+  right:4px;
+  border-radius:4px;
+  padding:8px;
+  overflow:hidden;
+  opacity:0;
+  transition:.3s;
+}
+      
+      .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+        bottom:4px;
+        opacity:1;
+      }
+      
+      .textOverImage > input:checked + h2{
+        bottom:-20px;
+        opacity:0;
+      }
+      
+      .textOverImage > h2{
+        margin:0;
+      }
+    
+    
+    
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 33.3%;
+      padding: 5px;
+    }
+    
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    
+    
+    @keyframes myfirst {
+      0%   {background-color:rgb(255, 255, 255); left:150px; top:0px;}
+      25%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      50%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      75%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+    }
+    
+    .f-img{
+      border-radius: 50%;
+      display: block;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      margin:auto;
+      animation: myfirst 3s linear 3s infinite alternate;    
+  }
+
+  .img1{
+    width: 250px;
+    height: 250px;
+    border: 2px ;
+    float:right;
+    margin: 20px 0 10px 10px;
+    display: block;
+    border-radius: 50%;
+   
+  }
+  .img2{
+    width: 250px;
+    height: 250px;
+    border: 2px ;
+    float:left;
+    margin: 20px 10px 10px 0;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .lala{
+    color: rgb(240, 240, 247); 
+    text-align:center; 
+    letter-spacing: 3px;
+    font-family: "Blue Highway";
+    font-size: 3vw;
+  }
+
+.lala2{
+    color: rgb(240, 240, 247); 
+    text-align:center; 
+    letter-spacing: 1px;
+    font-family: "Blue Highway";
+    font-size: 1rem;
+}  
+
